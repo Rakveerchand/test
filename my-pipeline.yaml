@@ -9,7 +9,7 @@ metadata:
 spec:
   entrypoint: first-pipeline
   templates:
-  - name: script-demo
+    - name: download-data-function
     container:
       args: []
       command: [python, script.py]
