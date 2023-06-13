@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: first-pipeline-
+  annotations: {pipelines.kubeflow.org/kfp_sdk_version: 1.4.1, pipelines.kubeflow.org/pipeline_compilation_time: '2021-04-11T17:26:18.795222',
+    pipelines.kubeflow.org/pipeline_spec: '{"description": "Applies Decision Tree
+      and Logistic Regression for classification problem.", "name": "First Pipeline"}'}
+  labels: {pipelines.kubeflow.org/kfp_sdk_version: 1.4.1}
+spec:
+  entrypoint: first-pipeline
+  templates:
+  - name: script-demo
+    container:
+      args: []
+      command: [python, script.py]
+      image: rakveer/only-tests:script_v3
