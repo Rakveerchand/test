@@ -1,5 +1,5 @@
 FROM python:3.8-slim
-WORKDIR /pipelines
-COPY requirements.txt /pipelines
+WORKDIR /pipeline
+COPY requirements.txt /pipeline
 RUN pip install -r requirements.txt
-COPY script.py /pipelines
+COPY download_data.py /pipeline
