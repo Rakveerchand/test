@@ -1,7 +1,0 @@
-name: script
-description: demo script
-implementation:
-  container:
-    image: rakveer/only-tests:script_v3
-    command: [
-      python, decision_tree.py]
