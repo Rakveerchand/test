@@ -3,3 +3,8 @@ WORKDIR /pipeline
 COPY requirements.txt /pipeline
 RUN pip install -r requirements.txt
 COPY testing.py /pipeline
+
+
+
+
+# brew install heartexlabs/tap/label-studio
